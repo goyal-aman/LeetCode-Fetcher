@@ -1,0 +1,35 @@
+#Smallest String With Swaps
+<p>You are given a string <code>s</code>, and an array of pairs of indices in the string <code>pairs</code> where <code>pairs[i] = [a, b]</code> indicates 2 indices(0-indexed) of the string.</p>
+<p>You can swap the characters at any pair of indices in the given <code>pairs</code> <strong>any number of times</strong>.</p>
+<p>Return the lexicographically smallest string that <code>s</code> can be changed to after using the swaps.</p>
+<p> </p>
+<p><strong class="example">Example 1:</strong></p>
+<pre><strong>Input:</strong> s = "dcab", pairs = [[0,3],[1,2]]
+<strong>Output:</strong> "bacd"
+<strong>Explaination:</strong> 
+Swap s[0] and s[3], s = "bcad"
+Swap s[1] and s[2], s = "bacd"
+</pre>
+<p><strong class="example">Example 2:</strong></p>
+<pre><strong>Input:</strong> s = "dcab", pairs = [[0,3],[1,2],[0,2]]
+<strong>Output:</strong> "abcd"
+<strong>Explaination: </strong>
+Swap s[0] and s[3], s = "bcad"
+Swap s[0] and s[2], s = "acbd"
+Swap s[1] and s[2], s = "abcd"</pre>
+<p><strong class="example">Example 3:</strong></p>
+<pre><strong>Input:</strong> s = "cba", pairs = [[0,1],[1,2]]
+<strong>Output:</strong> "abc"
+<strong>Explaination: </strong>
+Swap s[0] and s[1], s = "bca"
+Swap s[1] and s[2], s = "bac"
+Swap s[0] and s[1], s = "abc"
+</pre>
+<p> </p>
+<p><strong>Constraints:</strong></p>
+<ul>
+<li><code>1 &lt;= s.length &lt;= 10^5</code></li>
+<li><code>0 &lt;= pairs.length &lt;= 10^5</code></li>
+<li><code>0 &lt;= pairs[i][0], pairs[i][1] &lt; s.length</code></li>
+<li><code>s</code> only contains lower case English letters.</li>
+</ul>
