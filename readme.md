@@ -1,0 +1,1 @@
+python3 get_all_questions_list.py
